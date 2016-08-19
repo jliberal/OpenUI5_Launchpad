@@ -1,0 +1,45 @@
+{
+		"linksData":[
+			{
+				"appId":"APP001",	
+				"icon":"address-book",
+				"link":"patients",
+				"title":"Consultar pacientes",
+				"type" : "Monitor"
+			},
+			{
+				"appId":"APP002",
+				"icon":"calendar",
+				"link":"agenda",
+				"title":"Consultar agenda",
+				"info" : "consultas hoy día",
+				"infoQuan":"3",
+				"infoState" : "Success"	
+			},
+			{
+				"appId":"APP003",
+				"icon":"create-entry-time",
+				"link":"appointments",
+				"title":"Agendar cita"
+			},
+			{
+				"appId":"APP004",
+				"icon":"clinical-order",
+				"link":"control",
+				"title":"Consulta Médica"
+			},
+			{
+				"appId":"APP005",
+				"icon":"work-history",
+				"link":"http://www.absys.cl",
+				"title":"Historia Médica"
+			},			
+			{
+				"appId":"APP006",
+				"icon":"pharmacy",
+				"link":"http://www.sap.com",
+				"title":"Consultar recipes",
+				"number" : "7"
+			}
+		]
+	}

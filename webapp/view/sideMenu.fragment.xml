@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:mc="sap.suite.ui.microchart"
+	xmlns:core="sap.ui.core">
+	<Page id="sidePageIdFrag" showHeader="false" class="sidePageWidth">
+		<VBox class="sapUiSmallMargin" id="docPic">
+			<Image id="docImgId" src="{logondata>/userData/img}" densityAware="false" width="100px" height="100px" decorative="false"/>
+			<Label text="{logondata>/userData/name}" textAlign="Center" class="sideBar"/>
+			<Label text="{logondata>/userData/company}" design="Bold" textAlign="Center" class="sideBar"/>
+		</VBox>
+		<VBox class="sapUiSmallMargin centerFlex" id="graphPic">
+			<FlexBox width="100px" height="100px" alignItems="Center" justifyContent="SpaceBetween">
+				<items>
+					<mc:RadialMicroChart percentage="45" press="press"></mc:RadialMicroChart>
+				</items>
+			</FlexBox>
+			<Label text="Ocupación de Agenda" design="Bold" textAlign="Center" class="sideBar"/>
+		</VBox>
+		<VBox class="sapUiTinyMargin centerFlex">
+			<!--<Label text="Acciones disponibles" design="Bold" textAlign="Center" class="sideBar"/>-->
+			<FlexBox alignItems="Center" justifyContent="SpaceBetween">
+				<items>
+					<SelectList id="appList" items="{apps>/linksData}" class="sideBar">
+							<core:Item key="{ProductId}" text="{apps>title}" />
+					</SelectList>
+				</items>
+			</FlexBox>				
+		</VBox>
+	</Page>
+</core:FragmentDefinition>

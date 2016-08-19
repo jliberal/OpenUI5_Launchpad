@@ -1,0 +1,49 @@
+<mvc:View controllerName="cl.absys.jpl.desarrollos.launchpad.controller.Menu" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified" xmlns:table="sap.ui.table" class="viewPadding"
+	height="100%" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showHeader="false">
+				<content>
+					<u:Shell id="myShell" icon="{/logo}" ShowCurtainPane="true">
+						<u:headItems>
+							<u:ShellHeadItem tooltip="Home" icon="sap-icon://home" visible="true" press="handlePressHome"/>
+						</u:headItems>
+						<u:headEndItems>
+						<u:ShellHeadItem tooltip="Reminders" icon="sap-icon://thing-type" visible="true" press="handleReminders"/>
+						</u:headEndItems>
+						<u:user>
+							<!-- username="{logondata>/userData/name}"  -->
+							<u:ShellHeadUserItem 
+								image="sap-icon://person-placeholder" 
+								username="({logondata>/userData/notifications}) - {logondata>/userData/name}"
+								showPopupIndicator="false"
+								tooltip="{logondata>/userData/id}" 
+								press="handleUserItemPressed"/>
+						</u:user>
+						<u:paneContent>
+							<VBox class="sapUiSmallMargin">
+							</VBox>
+						</u:paneContent>
+						<u:curtainPaneContent>
+						</u:curtainPaneContent>
+						<u:content>
+							<SplitApp id="oSplitApp" initialDetail="appPageId" initialMaster="sidePageId">  
+								<masterPages id="sidePageId" >  
+									<Page id="sidePageId" showHeader="false" class="sidePageWidth">
+										<core:Fragment fragmentName="cl.absys.jpl.desarrollos.launchpad.view.sideMenu" type="XML"/>
+									</Page>
+								</masterPages>  
+								<detailPages id="appPageId">  
+									<Page id="appPageId" showHeader="false" class="sidePageWidth">
+										<App xmlns="sap.m" id="rootControl"/> 
+									</Page>
+								</detailPages> 
+							</SplitApp> 
+						</u:content>
+					</u:Shell>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

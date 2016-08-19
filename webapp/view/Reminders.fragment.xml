@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+	<Popover
+		showHeader="false"
+		class="sapUiNoContentPadding"
+		placement="Bottom"
+			initialFocus="email">
+		<l:VerticalLayout
+				class="sapUiTinyPadding"
+				width="400px">
+			<l:content>
+				<!-- {logondata>/notifications} -->
+				<List
+					id="notifList"
+					items="{logondata>/notifications}">
+						<NotificationListItem
+							title="{logondata>title}"
+							description="{logondata>description}"
+							showCloseButton="true"
+							datetime="{logondata>datetime}"
+							priority="{logondata>priority}"
+							close="onItemClose"
+							press="onListItemPress"
+							authorPicture="sap-icon://{logondata>icon}">
+						</NotificationListItem>
+				</List>
+			</l:content>
+		</l:VerticalLayout>	
+	</Popover>
+</core:FragmentDefinition>

@@ -1,0 +1,27 @@
+{
+	"userData": {
+		"id": "ABSYS01",
+		"name": "Dr. House",
+		"company": "ABSYS Ltda",
+		"img":"http://bit.ly/29C8Hts",
+		"notifications":2
+	},
+	"notifications":[
+		{
+			"id":"1",
+			"title": "Nueva cita (#2524): Jon Snow",
+			"description":"Endoscopia referida por gastro externo",
+			"datetime":"10/07/2016",
+			"priority":"Medium",
+			"icon":"endoscopy"
+		},
+		{
+			"id":"2",
+			"title": "Nueva cita (#2526): Cersei Lannister",
+			"description":"Cita nueva agendada",
+			"datetime":"14/07/2016",
+			"priority":"Low",
+			"icon":"clinical-order"
+		}
+	]
+}
