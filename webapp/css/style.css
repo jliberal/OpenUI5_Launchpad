@@ -1,0 +1,77 @@
+/* Enter your custom styles here */
+.customBackground{
+	background-image: linear-gradient(to bottom,#2da9b1 0,#178299 50%,#1a4c7d 100%)
+}
+.customBackground2{
+	background-image: linear-gradient(90deg, rgb(4, 106, 157) 25%, rgb(0, 84, 127) 100%);
+	background-image: -moz-linear-gradient(left, rgb(4, 106, 157) 25%, rgb(0, 84, 127) 100%);
+	background-image: -webkit-linear-gradient(left, rgb(4, 106, 157) 25%, rgb(0, 84, 127) 100%);
+	background-image: -o-linear-gradient(left, rgb(4, 106, 157) 25%, rgb(0, 84, 127) 100%);
+	background-image: -ms-linear-gradient(left, rgb(4, 106, 157) 25%, rgb(0, 84, 127) 100%);
+}
+.customBackground3{
+	background: #1A2980; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sapMLIB.sapMNLB{
+	padding: 0.2rem 0;
+}
+.sapMPopover{
+    background-color: #F2F2F2;
+    border: 1px #bfbfbf solid;
+    box-shadow: 0 0 0 0;
+    border-radius: 0px;
+    padding: 0.2rem 0;
+}
+.sapMPopoverWithoutBar>.sapMPopoverArrUp:after {
+    border-bottom-color: #F2F2F2;
+}
+.sideBar{
+	background: #444444;
+	color: white;
+}
+#__xmlview0--oSplitApp-Master{
+  width: 200px !important;	
+}
+.centerFlex{
+	align-items: center;
+}
+.imageRadius{
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.sapThemeBrand-asBackgroundColor{
+	background-color: red;	
+}
+
+.sapMStdTileMonitorType{
+	padding-bottom: 1px;
+}
+.sapMTile{
+    /*border: 1px solid #cc1919;*/
+    border-radius: 10%;
+    width: 12rem;
+    height: 12rem;
+}
+.sapMSelectListItemBaseHoverable:hover{
+	background: #26CBCC;
+}
+.sapMSelectListItemBaseSelected {
+    background:  #444444;
+}
+.sapMSelectListItemBaseHoverable:active{
+	background: #26CBCC;
+}
+.sapMTile.sapMTileActive{
+	background: #1A4E7E;
+}
+.sapMStdTileTopRow {
+    height: 3rem;
+}
+.sapMStdTileInfo {
+    margin-top: 0rem;
+}
+.sapMStdTileBottomRow {
+	height: 5rem;
+}
