@@ -45,7 +45,7 @@ sap.ui.define([
 			if (evt.getParameter("name") === "Grafico") {
 				return;
 			}	
-		},
+		}, 
 		handleUserItemPressed: function(oEvent){
 			var oButton = oEvent.getSource();
 			if(!this._oPopover){
