@@ -75,3 +75,66 @@
 .sapMStdTileBottomRow {
 	height: 5rem;
 }
+
+#busyIndicator {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 45%;
+	width: 100%;
+}
+
+
+/* Shell 
+.sapUiUfdShellHeadItm>span{color:#AAA;}
+.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSel>span{color:#000 !important;}
+ */
+
+/*Linea top*/
+.sapUiUfdShellBrand{background-color:#000 !important;} 
+/*Barra Shell*/
+.sapUiUfdShellHeader{
+	background-color: #45C8DC;	
+}
+/*Datos de usuario top
+.sapUiUfdShellIco,.sapUiUfdShellHeadUsrItm>span{color:#000;} */
+.sapUiUfdShellHeadItm>span,.sapUiUfdShellHeadUsrItm{
+	color:#000 !important;
+}
+.sapUiUfdShellHeadUsrItm:before, 
+.sapUiUfdShellHeadEnd,
+.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before{
+	border-right: 0px;
+}
+.sapUiUfdShellHeadUsrItm:before, 
+.sapUiUfdShellHeadEnd, 
+.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before{
+	border-right: 0px;	
+}
+
+.sapUiUfdShellHeadItmSep{
+	border-right: 0px;
+}
+/*
+.sapUiUfdShellSearch {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    max-width: 415px;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 39.6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #3c4449;
+}
+.sapUiUfdShellHeadContainer {
+    background-color: #3c4449;
+}
+
+.sapUiUfdShellHeadCenter {
+    background-color: #3c4449;
+}
+.sapUiUfdShellHeader {
+    background-color: #3c4449;
+}*/

@@ -20,8 +20,8 @@
 			<!--<Label text="Acciones disponibles" design="Bold" textAlign="Center" class="sideBar"/>-->
 			<FlexBox alignItems="Center" justifyContent="SpaceBetween">
 				<items>
-					<SelectList id="appList" items="{apps>/linksData}" class="sideBar">
-							<core:Item key="{ProductId}" text="{apps>title}" />
+					<SelectList id="appList" items="{logondata>/linksData}" class="sideBar">
+							<core:Item key="{logondata>appId}" text="{logondata>title}" />
 					</SelectList>
 				</items>
 			</FlexBox>				

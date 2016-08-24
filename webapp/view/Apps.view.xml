@@ -1,0 +1,28 @@
+<mvc:View
+	controllerName="cl.absys.jpl.desarrollos.launchpad.controller.Apps"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
+	<Page showHeader="false">
+		<TileContainer
+			id="container"
+			tiles="{logondata>/linksData}">
+			<StandardTile
+				press="handleTile"
+			    icon="sap-icon://{logondata>icon}"
+			    type="{logondata>type}"
+			    number="{logondata>number}"
+				numberUnit="{logondata>numberUnit}"
+				title="{logondata>title}"
+				info="{logondata>infoQuan} {logondata>info}"
+				infoState="{logondata>infoState}" />	
+		</TileContainer>		
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Label text="{i18n>copyRight}"/>
+				<ToolbarSpacer/>
+			</Toolbar>
+		</footer>		
+	</Page>
+</mvc:View>

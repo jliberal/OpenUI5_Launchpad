@@ -25,5 +25,14 @@
 			"priority":"Low",
 			"icon":"clinical-order"
 		}
+	],
+	"linksData":[
+		{
+			"appId":"APP001",	
+			"icon":"address-book",
+			"link":"patients",
+			"title":"Consultar pacientes",
+			"type" : "Monitor"
+		}
 	]
 }

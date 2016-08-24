@@ -6,12 +6,6 @@ sap.ui.define([
 
 	return Controller.extend("cl.absys.jpl.desarrollos.launchpad.controller.Menu", {
 		onInit: function(){
-			//Visibilidad
-			var	oViewModel = new JSONModel({
-					busy : true,
-					delay : 0
-			});
-			this.getView().setModel(oViewModel, "appView");			
 			//Router
 			this._oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this._oRouter.attachRouteMatched(this.handleRouteMatched, this);
@@ -24,17 +18,7 @@ sap.ui.define([
 			oCont.addStyleClass("centerFlex");
 			oCont = this.getView().byId("docImgId");
 			oCont.addStyleClass("imageRadius");
-			oCont = this.getView().byId("appList");
-		},
-		onAfterRendering : function() {
-    		// busy
-    		var oModel = this.getView().getModel("appView");
-    		var iOriginalBusyDelay = this.getView().getBusyIndicatorDelay();
-			this.fnSetAppNotBusy(oModel,iOriginalBusyDelay);
-		 },
-		fnSetAppNotBusy: function(oViewModel, vDelay) {
-			oViewModel.setProperty("/busy", false);
-			oViewModel.setProperty("/delay", vDelay);
+			
 		},
 		handlePressHome: function(oEvent){
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
