@@ -30,23 +30,22 @@ sap.ui.define([
 				var oModel = new JSONModel(sPath);
 				this.getView().setModel(oModel);
 			}, */
-			handleTile : function(oEvent){
+			/*handleTile : function(oEvent){
 				var link = oEvent.getSource().getBindingContext("logondata").getProperty("link");
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             	oRouter.navTo("appCont",{
 	            	"objectId": link,
 	            	"from": "apps"
 	            },false);
-=======
-=======
+
 					oCont.addStyleClass("customBackground"); 
 				// set mock model
 				/*
 				var sPath = jQuery.sap.getModulePath("cl.absys.jpl.desarrollos.menu.model", "/apps.json");
 				var oModel = new JSONModel(sPath);
-				this.getView().setModel(oModel);*/
+				this.getView().setModel(oModel);
 			},
-			//Git
+			//Git*/
 			handleTile : function(oEvent){
 				var link = oEvent.getSource().getBindingContext("logondata").getProperty("link");
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
@@ -54,8 +53,7 @@ sap.ui.define([
 	            	"objectId": link,
 	            	"from": "apps"
 	            },false);
->>>>>>> 97b4767 RC1
->>>>>>> branch 'master' of https://github.com/jliberal/OpenUI5_Launchpad.git
+
 			}
 		});
 	}	
