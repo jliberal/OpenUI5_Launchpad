@@ -106,7 +106,15 @@ background-image: linear-gradient(to bottom,#2da9b1 0,#178299 50%,#1a4c7d 100%)*
 	width: 100%;
 }
 
-<<<<<<< Upstream, based on 64bc7677ba7414000d795c2266c142e673c97b19
+
+
+
+/*=======*/
+.sapThemeFont{
+	font-family: verdana;
+	font-size: 10px;
+}
+
 
 /* Shell 
 .sapUiUfdShellHeadItm>span{color:#AAA;}
@@ -114,28 +122,45 @@ background-image: linear-gradient(to bottom,#2da9b1 0,#178299 50%,#1a4c7d 100%)*
  */
 
 /*Linea top*/
-.sapUiUfdShellBrand{background-color:#000 !important;} 
-/*Barra Shell*/
+.sapUiUfdShellBrand{
+	background-color:#ffffff !important;
+} 
+/*Barra Shell #45C8DC*/
 .sapUiUfdShellHeader{
-	background-color: #45C8DC;	
+	background-color: #ffffff;	
+	border-bottom: 2px solid #2D5D3C !important
 }
-/*Datos de usuario top
+/*Datos de usuario top Iconos y font
 .sapUiUfdShellIco,.sapUiUfdShellHeadUsrItm>span{color:#000;} */
 .sapUiUfdShellHeadItm>span,.sapUiUfdShellHeadUsrItm{
-	color:#000 !important;
+	color:#2D5D3C !important; 
 }
-.sapUiUfdShellHeadUsrItm:before, 
-.sapUiUfdShellHeadEnd,
-.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before{
-	border-right: 0px;
+
+.sapUiUfdShellHeadBegin,.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:after {
+    border-left:0 solid #45C8DC !important;
 }
-.sapUiUfdShellHeadUsrItm:before, 
-.sapUiUfdShellHeadEnd, 
-.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before{
-	border-right: 0px;	
+
+.sapUiUfdShellHeadUsrItm:before, .sapUiUfdShellHeadEnd .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before {
+    border-right: 0 solid #ffffff !important;
 }
 
 .sapUiUfdShellHeadItmSep{
+<<<<<<< HEAD
+	border-right: 0 !important;
+}
+
+.sapUiUfdShellBrand{
+	    background-color: white;
+}
+
+
+.sapUiUfdShellHeadBegin .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:after {
+	border-left: 0px solid #ffffff !important;
+}
+
+.sapSuiteRMCPathNeutral {
+    stroke: #2D5D3C !important;
+=======
 	border-right: 0px;
 =======
 .sapThemeFont{
@@ -187,6 +212,7 @@ background-image: linear-gradient(to bottom,#2da9b1 0,#178299 50%,#1a4c7d 100%)*
 .sapSuiteRMCPathNeutral {
     stroke: #2D5D3C !important;
 >>>>>>> 97b4767 RC1
+>>>>>>> branch 'master' of https://github.com/jliberal/OpenUI5_Launchpad.git
 }
 /*
 .sapUiUfdShellSearch {
