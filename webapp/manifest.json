@@ -93,12 +93,24 @@
 					"target": [
 						"apps"
 					]
+				},
+				{
+					"pattern": "appCont/{objectId}",
+					"name": "appCont",
+					"target": [
+						"appCont"
+					]
 				}
 			],
 			"targets": {
 				"apps": {
 					"viewName": "Apps",
 					"viewId": "apps",
+					"viewLevel": 1
+				},
+				"appCont": {
+					"viewName": "AppCont",
+					"viewId": "appCont",
 					"viewLevel": 1
 				},
 				"notFound": {

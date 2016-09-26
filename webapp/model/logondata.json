@@ -5,7 +5,8 @@
 		"id": "ABSYS01",
 		"name": "Dr. House",
 		"company": "ABSYS Ltda",
-		"img":"http://bit.ly/29C8Hts",
+		"img":"img/HouseLogin.png",
+		"img2": "http://bit.ly/29C8Hts",
 		"notifications":2
 	},
 	"notifications":[
@@ -30,9 +31,15 @@
 		{
 			"appId":"APP001",	
 			"icon":"address-book",
+<<<<<<< Upstream, based on 64bc7677ba7414000d795c2266c142e673c97b19
 			"link":"patients",
 			"title":"Consultar pacientes",
 			"type" : "Monitor"
+=======
+			"title":"Consultar pacientes",
+			"type" : "Monitor",
+			"link": "www.google.cl"
+>>>>>>> 97b4767 RC1
 		}
 	]
 }

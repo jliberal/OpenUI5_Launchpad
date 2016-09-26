@@ -1,6 +1,22 @@
-/* Enter your custom styles here */
+/* Enter your custom styles here 
+background-image: linear-gradient(to bottom,#2da9b1 0,#178299 50%,#1a4c7d 100%)*/
+/*.sapUiUfdShellHeadUsrItm>span:active{
+	background-color: #8EAE98 !important;
+	color: #ffffff !important;
+}*/
+.sapUiUfdShellHeadUsrItm:hover:active > *,
+.sapUiUfdShellHeadUsrItm:active > * {
+	background-color: #8EAE98 !important;
+	color: #ffffff !important;
+}
+.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep>span:active {
+	background-color: #8EAE98 !important;
+	color: #ffffff !important;
+}	
 .customBackground{
-	background-image: linear-gradient(to bottom,#2da9b1 0,#178299 50%,#1a4c7d 100%)
+	background: #649173; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #649173 , #DBD5A4); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #649173 , #DBD5A4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .customBackground2{
 	background-image: linear-gradient(90deg, rgb(4, 106, 157) 25%, rgb(0, 84, 127) 100%);
@@ -39,7 +55,7 @@
 }
 .imageRadius{
 	border-radius: 50%;
-	border: 2px solid white;
+	border: 2px solid #2D5D3C;
 }
 .sapThemeBrand-asBackgroundColor{
 	background-color: red;	
@@ -50,21 +66,28 @@
 }
 .sapMTile{
     /*border: 1px solid #cc1919;*/
-    border-radius: 10%;
+    border-radius: 5%;
     width: 12rem;
     height: 12rem;
+    border: 1px solid #2D5D3C;
+}
+.sapMTile.sapMTileActive{
+	
+}
+.sapMStdTileMonitorType {
+	background-color: #BDCFC2;
 }
 .sapMSelectListItemBaseHoverable:hover{
-	background: #26CBCC;
+	background: #8EAE98;
 }
 .sapMSelectListItemBaseSelected {
     background:  #444444;
 }
 .sapMSelectListItemBaseHoverable:active{
-	background: #26CBCC;
+	background: #76b852;
 }
 .sapMTile.sapMTileActive{
-	background: #1A4E7E;
+	background: #2D5D3C;
 }
 .sapMStdTileTopRow {
     height: 3rem;
@@ -83,6 +106,7 @@
 	width: 100%;
 }
 
+<<<<<<< Upstream, based on 64bc7677ba7414000d795c2266c142e673c97b19
 
 /* Shell 
 .sapUiUfdShellHeadItm>span{color:#AAA;}
@@ -113,6 +137,56 @@
 
 .sapUiUfdShellHeadItmSep{
 	border-right: 0px;
+=======
+.sapThemeFont{
+	font-family: verdana;
+	font-size: 10px;
+}
+
+/* Shell 
+.sapUiUfdShellHeadItm>span{color:#AAA;}
+.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSel>span{color:#000 !important;}
+ */
+
+/*Linea top*/
+.sapUiUfdShellBrand{
+	background-color:#ffffff !important;
+} 
+/*Barra Shell #45C8DC*/
+.sapUiUfdShellHeader{
+	background-color: #ffffff;	
+	border-bottom: 2px solid #2D5D3C !important
+}
+/*Datos de usuario top Iconos y font
+.sapUiUfdShellIco,.sapUiUfdShellHeadUsrItm>span{color:#000;} */
+.sapUiUfdShellHeadItm>span,.sapUiUfdShellHeadUsrItm{
+	color:#2D5D3C !important; 
+}
+
+.sapUiUfdShellHeadBegin,.sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:after {
+    border-left:0 solid #45C8DC !important;
+}
+
+.sapUiUfdShellHeadUsrItm:before, .sapUiUfdShellHeadEnd .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:before {
+    border-right: 0 solid #ffffff !important;
+}
+
+.sapUiUfdShellHeadItmSep{
+	border-right: 0 !important;
+}
+
+.sapUiUfdShellBrand{
+	    background-color: white;
+}
+
+
+.sapUiUfdShellHeadBegin .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:after {
+	border-left: 0px solid #ffffff !important;
+}
+
+.sapSuiteRMCPathNeutral {
+    stroke: #2D5D3C !important;
+>>>>>>> 97b4767 RC1
 }
 /*
 .sapUiUfdShellSearch {

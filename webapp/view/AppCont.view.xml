@@ -1,0 +1,13 @@
+<mvc:View
+	controllerName="cl.absys.jpl.desarrollos.launchpad.controller.AppCont"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
+	<Page showHeader="false" id="appContPage">
+		<content width="100%">
+			<!--<Panel id="appContPanel" 
+				width="100%">
+			</Panel>-->		
+		</content>
+	</Page>
+</mvc:View>
